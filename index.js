@@ -17,7 +17,7 @@ app.get('/', async (_req, res) => {
 })
 app.get('/crear', async (_req, res) => {
   console.log('creando...')
-  await Animal.create({ tipo: 'Chanchito', estado: 'Feliz' })
+  await Animal.create({ tipo: 'Cat', estado: 'Feliz' })
   return res.send('ok')
 })
 
