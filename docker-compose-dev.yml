@@ -9,14 +9,14 @@ services:
     links:
       - monguito
     volumes:
-      - .:/home/app
+      - .:/users/gratn/documents/html/vhtml/cursodocker/mongoapp-curso-docker-main/index.js
   monguito:
     image: mongo
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=nico
-      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_ROOT_USERNAME=milton
+      - MONGO_INITDB_ROOT_PASSWORD=milton2023
     volumes:
       - mongo-data:/data/db
       # mysql -> /var/lib/mysql
