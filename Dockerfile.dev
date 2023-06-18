@@ -1,9 +1,9 @@
-FROM node:18
+FROM node:18.12.1
 
 RUN npm i -g nodemon
-RUN mkdir -p /home/app
+RUN mkdir -p /users/gratn/documents/html/vhtml/cursodocker/mongoapp-curso-docker-main/index.js
 
-WORKDIR /home/app
+WORKDIR /users/gratn/documents/html/vhtml/cursodocker/mongoapp-curso-docker-main/index.js
 
 EXPOSE 3000
 

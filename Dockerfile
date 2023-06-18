@@ -1,9 +1,10 @@
-FROM node:18
+FROM node:18.12.1
 
-RUN mkdir -p /home/app
 
-COPY . /home/app
+RUN mkdir -p /users/gratn/documents/html/vhtml/cursodocker/mongoapp-curso-docker-main/index.js
+
+COPY . /users/gratn/documents/html/vhtml/cursodocker/mongoapp-curso-docker-main/index.js
 
 EXPOSE 3000
 
-CMD ["node", "/home/app/index.js"]
+CMD ["node", "/users/gratn/documents/html/vhtml/cursodocker/mongoapp-curso-docker-main/index.js"]
